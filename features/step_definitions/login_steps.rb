@@ -24,5 +24,10 @@ Then(/^I cancel SignUp/) do
 end
 
 Then(/^I submit signup details/) do
-  @pages.page_home.submit_signup("email@test.com", "parole", "testProject")
+  @pages.page_home.submit_signup("martins1@tdlbox.com", "Parole12", "Project Namemz14014")
+end
+
+Then(/^I submit login details/) do
+  @pages.page_home.submit_login("martins1@tdlbox.com", "Parole12", "Project Namemz14014")
+  @pages.page_main.visible?("martins1@tdlbox.com", "Project Namemz14014")
 end
