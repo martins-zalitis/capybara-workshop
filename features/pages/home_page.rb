@@ -46,10 +46,10 @@ class HomePage < BasePage
     @button_signup_cancel.click
   end
 
-  def submit_signup(email, password, project_name)
-    enter_signup_email email
-    enter_signup_passwords password
-    enter_signup_project_name project_name
+  def submit_signup(user)
+    enter_signup_email user.email
+    enter_signup_passwords user.password
+    enter_signup_project_name user.project_name
     cancel_signup
   end
 
