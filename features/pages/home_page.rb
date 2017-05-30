@@ -9,12 +9,40 @@ class HomePage < BasePage
     @input_signup_password_again = Element.new(:xpath, '//div[@id = "signup"]/descendant::input[@name = "password2"]')
     @input_signup_project_name = Element.new(:xpath, '//div[@id = "signup"]/descendant::input[@name = "project_name"]')
     @button_signup_cancel = Element.new(:xpath, '//div[@id = "signup"]/descendant::img[@class = "closecross"]')
+    @button_signup_accept = Element.new(:xpath, '//div[@id = "signup"]/descendant::button[@class = "button-form button-block-form innerButton"]')
+
+    @input_login_email = Element.new(:xpath, '//div[@id = "login"]/descendant::input[@name = "login"]')
+    @input_login_password = Element.new(:xpath, '//div[@id = "login"]/descendant::input[@name = "password"]')
+    @button_login_accept = Element.new(:xpath, '//div[@id = "login"]/descendant::button[@class = "button button-block innerButton"]')
   end
+
 
   def visible?
     @button_start.visible?
     @button_login.visible?
     @button_signup.visible?
+  end
+
+  def click_login_button
+    @button_login.click
+  end
+
+  def enter_login_email(email)
+    @input_login_email.send_keys(email)
+  end
+
+  def enter_login_password(password)
+    @input_login_password.send_keys(password)
+  end
+
+  def accept_login
+    @button_login_accept.click
+  end
+
+  def submit_login(user)
+    enter_login_email user.email
+    enter_login_password user.password
+    accept_login
   end
 
   def click_try_now
@@ -46,11 +74,15 @@ class HomePage < BasePage
     @button_signup_cancel.click
   end
 
+  def accept_signup
+    @button_signup_accept.click
+  end
+
   def submit_signup(user)
     enter_signup_email user.email
     enter_signup_passwords user.password
     enter_signup_project_name user.project_name
-    cancel_signup
+    accept_signup
   end
 
   def load
