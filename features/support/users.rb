@@ -22,7 +22,7 @@ module Users
   def Users.long_email_user
     @long_email = 'MzalTDLemail'
     count = 0
-      while @input_login_phone != "" && count < 15
+      while count < 15
         @long_email = @long_email + DateTime.now.strftime('%Q') + DateTime.now.strftime('%Q')
         count += 1
       end
