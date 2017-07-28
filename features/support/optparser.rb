@@ -13,7 +13,7 @@ class Optparse
     options.threads = '2'
     options.report_path = 'report/'
     options.environment = 'prod'
-    options.grid = 'http://10.1.8.177:4444/wd/hub'
+    options.grid = 'http://10.1.9.71:4444/wd/hub'
     options.browser = 'GRID-CHROME'
 
     opt_parser = OptionParser.new do |opts|

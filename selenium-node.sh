@@ -9,7 +9,8 @@
 ### END INIT INFO
 
 SCRIPT='xvfb-run --server-args="-screen 0, 1366x768x24" selenium-standalone start -- -role node -hub http://localhost:4444/grid/register'
-RUNAS=user
+# SCRIPT='selenium-standalone start -- -role node -hub http://localhost:4444/grid/register'
+RUNAS=mz
 
 PIDFILE=/var/run/selenium-node.pid
 LOGFILE=/var/log/selenium/selenium-node.log

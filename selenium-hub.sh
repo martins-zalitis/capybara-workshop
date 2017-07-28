@@ -1,6 +1,6 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          Selenium Hub
+# Provides:          Selenium_Hub
 # Required-Start:    $local_fs $network $named $time $syslog
 # Required-Stop:     $local_fs $network $named $time $syslog
 # Default-Start:     2 3 4 5
@@ -9,7 +9,7 @@
 ### END INIT INFO
 
 SCRIPT="selenium-standalone start -- -role hub"
-RUNAS=user
+RUNAS=mz
 
 PIDFILE=/var/run/selenium-hub.pid
 LOGFILE=/var/log/selenium/selenium-hub.log

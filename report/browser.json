@@ -1,0 +1,158 @@
+[
+  {
+    "uri": "features/demo.feature",
+    "id": "demo-feature",
+    "keyword": "Feature",
+    "name": "Demo Feature",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "demo-feature;open-signup-page",
+        "keyword": "Scenario",
+        "name": "Open SignUp Page",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.13.0/lib/capybara/cucumber.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34417
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.13.0/lib/capybara/cucumber.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15425
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.14/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10911
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5742944808
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on Appimation home page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/signup_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4398322867
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:69"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 18969
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I submit signup details",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/signup_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2272421086
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:69"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 14602
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I see Appimation home page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/signup_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 263415523
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:69"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 14769
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25504728
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.14/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22509
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.13.0/lib/capybara/cucumber.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 260648529
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
